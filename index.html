@@ -68,14 +68,12 @@
 			if(randomWord.indexOf(key) === -1 && wrongLetters.indexOf(key) === -1){
 				wrongLetters.push(key);
 				graveYard.innerHTML = wrongLetters;
-				
-			}
-
-			if(randomWord.indexOf(key) === -1){
 				guessCount--;
 				document.getElementById("guessesLeft").innerHTML = guessCount;
-			}
+				
+			};
 
+	
 			//if the key pressed has an index of greater than 1, that letter will appear in the word.
 			if (randomWord.indexOf(key) > -1) {
 
